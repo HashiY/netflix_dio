@@ -180,8 +180,9 @@ header nav a:hover{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.modal-img-jojo6{
+.modal-img-info{
     background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/jojo6_1.jpg');
+    background-size: cover;
 }
 
 .modal-body {
