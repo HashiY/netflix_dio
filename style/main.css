@@ -44,7 +44,7 @@ header nav a:hover{
 /*filme principal*/
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/jojo6.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
@@ -100,4 +100,151 @@ header nav a:hover{
 
 .carrosel-filme{
     margin-top: 5px;
+}
+
+.carrosel-filme p{
+    margin: 5px;
+}
+
+/*Modal Box*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  /*Animacao*/
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+
+  /*botao fechar*/
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  .close:hover,
+.close:focus {
+  color: rgb(63, 62, 65);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+.modal-header p{
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.modal-img-jojo6{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/jojo6_1.jpg');
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-body-linha{
+    display: flex;
+    justify-content: start;
+}
+ .modal-corpo{
+    margin: 10px;
+}
+.modal-body-linha .relevante{
+    color: rgb(11, 161, 11);
+}
+.modal-body-linha .modal-idade{
+    border: 1px solid;
+    padding: .3rem;
+    margin-top: 5px;
+}
+.modal-body-linha .img-svg{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.modal-body-icones{
+    display: flex;
+    flex-direction: column;
+}
+.modal-corpo-icones{
+    margin: 10px 40px 10px 30px; /*top right bottom left*/
+}
+.modal-body-icones:hover{
+    color: rgb(170, 6, 170);
+}
+
+.modal-videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;                   /*espaço dos elementos*/
+    margin: 0 auto;
+}
+.video-img{
+    width: 400px!important;
+    height: 200px!important;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-corpo h3{
+    margin-top: 6px;
+    margin-bottom: 8px;
+}
+
+.video-itens{
+    border: 1px solid rgb(52, 52, 51);
+    padding: .3rem;
+}
+
+.video-itens:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(90, 90, 90);
 }
